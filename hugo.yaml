@@ -1,0 +1,20 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: My New Hugo Site
+theme: ["PaperMod"]
+params:
+  # Set Theme to Home-Info
+  defaultTheme: auto
+  homeInfoParams:
+    Title: Hi there wave
+    Content: Can be Info, links, about...
+
+  # Add social icons to home page
+  socialIcons: # optional
+    - name: "<platform>"
+      url: "<link>"
+    - name: "<platform 2>"
+      url: "<link2>"
+
+  # Show share buttons on posts
+  ShowShareButtons: true
