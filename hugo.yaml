@@ -1,20 +1,43 @@
-baseURL: https://example.org/
+baseURL: http://taylor-agarwal.github.io/website/
 languageCode: en-us
-title: My New Hugo Site
+title: Taylor Agarwal's Homepage
 theme: ["PaperMod"]
 params:
   # Set Theme to Home-Info
   defaultTheme: auto
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
+    Title: Welcome to my website!
+    Content: Feel free to check out my projects and posts!
 
   # Add social icons to home page
   socialIcons: # optional
-    - name: "<platform>"
-      url: "<link>"
-    - name: "<platform 2>"
-      url: "<link2>"
+    - name: "email"
+      url: "taylor.agarwal@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/taylor-agarwal/"
+    - name: "github"
+      url: "https://github.com/taylor-agarwal"
 
   # Show share buttons on posts
-  ShowShareButtons: true
+  ShowShareButtons: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+menu:
+  main:
+    - name: CV
+      url: cv
+      weight: 5
+    - name: Posts
+      url: posts
+      weight: 10
+    - name: Search
+      url: search/
+      weight: 20
+
+security:
+  enableInlineShortcodes: true
